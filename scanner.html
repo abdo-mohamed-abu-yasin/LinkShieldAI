@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URL Scanner | LinkShield AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scanner.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            LinkShield<span>AI</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scanner.html">URL Scanner</a>
+            <a href="history.html">History</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="scanner.html" class="nav-btn">
+            Scan URL
+        </a>
+
+    </header>
+
+    <!-- Scanner Page -->
+    <main class="scanner-page">
+
+        <!-- Scanner Header -->
+        <section class="scanner-header">
+
+            <div class="status">
+                <span class="status-dot"></span>
+                AI-POWERED URL ANALYSIS
+            </div>
+
+            <h1>
+                URL <span>Security Scanner</span>
+            </h1>
+
+            <p>
+                Check suspicious links before opening them.
+                Our intelligent system analyzes URL characteristics
+                to identify potential phishing threats.
+            </p>
+
+        </section>
+
+        <!-- Scanner Card -->
+        <section class="scanner-card">
+
+            <div class="scanner-icon">
+                🛡️
+            </div>
+
+            <h2>Scan Your URL</h2>
+
+            <p>
+                Enter the website URL you want to analyze.
+            </p>
+
+            <form id="scannerForm">
+
+                <label for="urlInput">
+                    Website URL
+                </label>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="urlInput"
+                        placeholder="https://example.com"
+                        autocomplete="url"
+                        required
+                    >
+
+                    <button type="submit" id="scanButton">
+                        Analyze URL
+                    </button>
+
+                </div>
+
+                <div id="errorMessage" class="error-message"></div>
+
+            </form>
+
+            <div class="scanner-note">
+                <span>🔒</span>
+                Your URL is analyzed without directly opening it.
+            </div>
+
+        </section>
+
+        <!-- Scan Result -->
+        <div id="resultContainer"></div>
+
+        <!-- Interactive Analysis Features -->
+        <section class="analysis-info">
+
+            <button
+                type="button"
+                class="info-card"
+                data-detail="url"
+            >
+                <span>🔍</span>
+                <h3>URL Analysis</h3>
+                <p>
+                    Examine URL structure and suspicious patterns.
+                </p>
+                <small>Click to explore →</small>
+            </button>
+
+            <button
+                type="button"
+                class="info-card"
+                data-detail="ai"
+            >
+                <span>🤖</span>
+                <h3>AI Detection</h3>
+                <p>
+                    Use machine learning to classify suspicious URLs.
+                </p>
+                <small>Click to explore →</small>
+            </button>
+
+            <button
+                type="button"
+                class="info-card"
+                data-detail="risk"
+            >
+                <span>📊</span>
+                <h3>Risk Assessment</h3>
+                <p>
+                    Understand potential security risks.
+                </p>
+                <small>Click to explore →</small>
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Details Modal -->
+    <div
+        id="detailsModal"
+        class="details-modal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                type="button"
+                id="closeModal"
+                class="modal-close"
+                aria-label="Close"
+            >
+                &times;
+            </button>
+
+            <div class="modal-badge">
+                LINKSHIELD AI ANALYSIS
+            </div>
+
+            <h2 id="modalTitle">
+                Analysis Details
+            </h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/model.js"></script>
+    <script src="js/analyzer.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/scanner.js"></script>
+
+</body>
+</html>

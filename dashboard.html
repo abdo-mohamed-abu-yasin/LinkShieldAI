@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Security Dashboard | LinkShield AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            LinkShield<span>AI</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scanner.html">URL Scanner</a>
+            <a href="history.html">History</a>
+
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="scanner.html" class="nav-btn">
+            Scan URL
+        </a>
+
+    </header>
+
+    <main class="dashboard-container">
+
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+
+            <div>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    SECURITY OVERVIEW
+                </div>
+
+                <h1>Security Dashboard</h1>
+
+                <p>
+                    Monitor your URL scanning activity and security results.
+                </p>
+            </div>
+
+            <a href="scanner.html" class="dashboard-scan-btn">
+                + New Scan
+            </a>
+
+        </header>
+
+        <!-- Statistics -->
+        <section class="dashboard-stats">
+
+            <div class="stat-card total-card">
+                <div class="stat-icon">📊</div>
+                <h3>Total Scans</h3>
+                <p id="totalScans">0</p>
+                <span>All scanned URLs</span>
+            </div>
+
+            <div class="stat-card legitimate-card">
+                <div class="stat-icon">✓</div>
+                <h3>Legitimate URLs</h3>
+                <p id="legitimateScans">0</p>
+                <span>Low-risk results</span>
+            </div>
+
+            <div class="stat-card phishing-card">
+                <div class="stat-icon">⚠</div>
+                <h3>Phishing URLs</h3>
+                <p id="phishingScans">0</p>
+                <span>Potential threats detected</span>
+            </div>
+
+            <div class="stat-card rate-card">
+                <div class="stat-icon">📈</div>
+                <h3>Phishing Share</h3>
+                <p id="phishingRate">0%</p>
+                <span>Of total scans</span>
+            </div>
+
+        </section>
+
+        <!-- Recent Scans -->
+        <section class="dashboard-content">
+
+            <div class="dashboard-section-header">
+
+                <div>
+                    <h2>Recent Scans</h2>
+                    <p>Your latest URL analysis results.</p>
+                </div>
+
+                <a href="history.html">
+                    View All History →
+                </a>
+
+            </div>
+
+            <div id="recentScans">
+                <p>No recent scans available.</p>
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="dashboard-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-cards">
+
+                <a href="scanner.html" class="action-card">
+                    <span>🔍</span>
+                    <h3>Scan a URL</h3>
+                    <p>Analyze a website link for potential threats.</p>
+                </a>
+
+                <a href="history.html" class="action-card">
+                    <span>📋</span>
+                    <h3>Scan History</h3>
+                    <p>Review your previous URL scanning activity.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

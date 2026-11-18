@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkShield AI - Scan History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="history-container">
+
+        <header class="history-header">
+            <div>
+                <h1>Scan History</h1>
+                <p>View all your previous URL scans.</p>
+            </div>
+
+            <a href="scanner.html">Back to Scanner</a>
+        </header>
+
+        <section class="history-content">
+
+            
+<div class="history-top">
+    <h2>Previous Scans</h2>
+
+    <button id="clearHistoryBtn" type="button">
+        Clear History
+    </button>
+</div>
+
+<!-- Search and Filter -->
+<div class="history-controls">
+
+    <input
+        type="text"
+        id="historySearch"
+        placeholder="Search for a URL..."
+    >
+
+    <select id="historyFilter">
+        <option value="all">All Results</option>
+        <option value="Phishing">Phishing Only</option>
+        <option value="Legitimate">Legitimate Only</option>
+    </select>
+
+</div>
+
+
+            <div id="historyContainer">
+                <p>No scan history yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/history.js"></script>
+
+</body>
+</html>

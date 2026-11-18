@@ -1,0 +1,14 @@
+# Dataset files
+ml/dataset.csv
+ml/dataset_backup.csv
+
+# Model backups
+ml/model_backup.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.*
